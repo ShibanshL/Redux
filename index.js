@@ -3,7 +3,9 @@
 
 const buy_cake = 'Buy Cake'
 
-
-{
-    type:buy_cake
+function actionCreator(){
+    return {
+        type:buy_cake,
+        info:'First redux action'
+    }
 }
