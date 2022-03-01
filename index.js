@@ -19,6 +19,7 @@ const initialState = {
 const reducer = (state=initialState, action) => {
     switch(action.type){
         case buy_cake : return{
+            ... state,
             numOfCakes: state.numOfCakes-1
         }
 
