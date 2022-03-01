@@ -2,3 +2,8 @@
 // Actions //
 
 const buy_cake = 'Buy Cake'
+
+
+{
+    type:buy_cake
+}
