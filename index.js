@@ -11,3 +11,7 @@ function actionCreator(){
 }
 
 //(prevState, action) = newState
+
+const initialState = {
+    numOfCakes:20
+}
