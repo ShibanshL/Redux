@@ -32,4 +32,7 @@ const reducer = (state=initialState, action) => {
 
 const store = createStore(reducer)
 console.log('Initial state '+store.getState())
-store.subscribe(() =>console.log('Updated State '+store.getState()))
+const unsubscribe = store.subscribe(() =>console.log('Updated State '+store.getState()))
+store.dispatch(actionCreator())
+store.dispatch(actionCreator())
+store.dispatch(actionCreator())
