@@ -15,3 +15,11 @@ function actionCreator(){
 const initialState = {
     numOfCakes:20
 }
+
+const reducer = (state=initialState, action) => {
+    switch(action.type){
+        case buy_cake : return{
+            numOfCakes: state.numOfCakes-1
+        }
+    }
+}
