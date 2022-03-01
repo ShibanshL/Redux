@@ -36,7 +36,9 @@ const reducer = (state=initialState, action) => {
         case buy_cake : return{
             ... state,
             numOfCakes: state.numOfCakes - 1,
-
+        }
+        case buy_icecream : return{
+            ...state,
             numOfIceCream : state.numOfIceCream + 1
         }
 
@@ -53,7 +55,7 @@ store.dispatch(actionCreator())
 store.dispatch(actionCreator())
 store.dispatch(actionCreator())
 
-unsubscribe()
+// unsubscribe()
 
 store.dispatch(actionCreator2())
 store.dispatch(actionCreator2())
