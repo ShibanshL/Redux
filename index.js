@@ -30,4 +30,4 @@ const reducer = (state=initialState, action) => {
     }
 }
 
-const store = createStore()
+const store = createStore(reducer)
