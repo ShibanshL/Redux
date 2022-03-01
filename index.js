@@ -21,5 +21,7 @@ const reducer = (state=initialState, action) => {
         case buy_cake : return{
             numOfCakes: state.numOfCakes-1
         }
+
+        default: return state
     }
 }
