@@ -1,1 +1,2 @@
-console.log('hey man')
+// The journey begins //
+// Actions //
