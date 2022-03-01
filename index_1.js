@@ -3,6 +3,7 @@
 
 const redux = require('redux')
 const createStore = redux.createStore
+const comebineReducers =  redux.combineReducers
 
 const buy_cake = 'BUY_CAKE'
 
@@ -54,7 +55,15 @@ const reducer2 = (state=initialCakeState, action) => {
     }
 }
 
-const store = createStore(reducer)
+
+//You are combining the reducers here
+
+const rootReducer = comebineReducers({
+    cake : reducer2,
+    icecream : reducer
+})
+
+const store = createStore(rootReducer)
 console.log('Initial state ',store.getState())
 const unsubscribe = store.subscribe(() =>console.log('Updated State ',store.getState()))
 
