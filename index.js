@@ -36,3 +36,6 @@ const unsubscribe = store.subscribe(() =>console.log('Updated State '+store.getS
 store.dispatch(actionCreator())
 store.dispatch(actionCreator())
 store.dispatch(actionCreator())
+
+
+unsubscribe()
