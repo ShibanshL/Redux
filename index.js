@@ -1,6 +1,9 @@
 // The journey begins //
 // Actions //
 
+const redux = require('redux')
+const createStore = redux.createStore
+
 const buy_cake = 'Buy Cake'
 
 function actionCreator(){
@@ -26,3 +29,5 @@ const reducer = (state=initialState, action) => {
         default: return state
     }
 }
+
+const store = createStore()
