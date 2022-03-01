@@ -9,3 +9,5 @@ function actionCreator(){
         info:'First redux action'
     }
 }
+
+//(prevState, action) = newState
