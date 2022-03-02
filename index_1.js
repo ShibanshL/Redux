@@ -71,7 +71,7 @@ const rootReducer = comebineReducers({
 
 const store = createStore(rootReducer, applyMiddleware(logger))
 console.log('Initial state ',store.getState())
-const unsubscribe = store.subscribe(() =>console.log('Updated State ',store.getState()))
+const unsubscribe = store.subscribe(() =>{})
 
 
 store.dispatch(actionCreator())
