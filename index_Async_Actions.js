@@ -28,3 +28,29 @@ const fetchUserError = error =>{
         payload:error
     }
 }
+
+
+const reducer = (state = initialState, action) =>{
+    switch(action.type){
+        case fetch_user_request:
+            return{
+                ...state,
+                loading:true
+            }
+
+        case fetch_user_success:
+            return{
+                loading:false,
+                user:action.payload,
+                error:''
+            }
+
+        case fetch_user_failure:
+            return{
+                loading:false,
+                user:[],
+                error:action.payload
+
+            }
+    }
+}
