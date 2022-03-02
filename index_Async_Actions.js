@@ -1,3 +1,6 @@
+const redux = require('redux')
+const createStore = redux.createStore
+
 const initialState = {
     loading:true,
     data:[],
@@ -54,3 +57,6 @@ const reducer = (state = initialState, action) =>{
             }
     }
 }
+
+const store = createStore(reducer)
+// console.log('Initial state ',store.getState())
