@@ -76,6 +76,24 @@ const fetchUsers = () => {
     }
 }
 
+// const fetchUsers = () => {
+//     return async function(dispatch){
+//          try{
+//             dispatch(fetchUserRequest())
+//             const url ='https://jsonplaceholder.typicode.com/users'
+//             const response = await fetch(url)
+//             const data = await response.json()
+            
+//             const user = data.map(e => e.id)
+//             dispatch(fetchUserSuccess(user))
+//         }
+//         catch (e) {
+//             dispatch(fetchUserError(e.message))
+//         }
+// }
+// }
+
+
 const store = createStore(reducer, applyMiddleware(thunkMiddleware))
 store.subscribe(() => { console.log(store.getState())})
 store.dispatch(fetchUsers())
