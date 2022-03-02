@@ -2,9 +2,11 @@
 // Actions //
 
 const redux = require('redux')
+const reduxLogger = require('redux-logger')
+
+
 const createStore = redux.createStore
 const comebineReducers =  redux.combineReducers
-const reduxLogger = require('redux-logger')
 const logger = reduxLogger.createLogger()
 
 
