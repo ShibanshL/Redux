@@ -71,7 +71,7 @@ const fetchUsers = () => {
         })
         .catch(err => {
             // const error = err.data
-            dispatch(fetchUserError(error.message))
+            dispatch(fetchUserError(err.message))
         })
     }
 }
